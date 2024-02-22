@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Doctors</title>
+
+    <style>
+
+        .AddDoctors
+        {
+            /* text-align: center; */
+            /* border: 2px solid rgb(0, 0, 0); */
+            margin-left: 430px;
+            margin-right: 430px;
+            background-color: rgb(203, 202, 209);
+            padding: 3%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgb(0, 0, 0);
+        }
+
+        p
+        {
+
+            color: rgb(5, 1, 23);
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Doctors-Registration Form</h2>
+    <br><br>
+
+    <script src="AddDoctors.js"></script>
+
+    <div class="AddDoctors">
+    <form onsubmit="event.preventDefault(); validate()" action="index.html" method="post">
+        
+        <label>First name : </label>
+        <input type="text" placeholder="Required" id="fname" required>
+        <p id="p1"></p><br>
+
+        <label>Last name : </label>
+        <input type="text" placeholder="Optional" id="lname"><br><br>
+
+        <label>specialization: </label>
+        <input type="text" placeholder="Required" id="specialization" required>
+        <p id="p2"></p><br>
+
+        <label >experience :</label>
+        <input type="number" placeholder="2 digit number" id="cnum" required>    
+        <p id="p3"></p><br>
+
+        <label>Contact number : </label>
+        <input type="text" placeholder="10 digits number" id="cnum" required>
+        <p id="p4"></p><br>
+
+        <label>Email Address : </label>
+        <input type="email" placeholder=" example@gmail.com" id="email" required>
+        <p id="p5"></p><br><br>
+
+        <button type="submit" onclick="confirmation();">Submit</button>
+    </form>
+
+</div>
+
+
+</body>
+</html>

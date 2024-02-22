@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("media/hospital-management-system-in-kenya.jpg");
+    background-size: 100%;
+    background-position:top ;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.489);
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-weight: bolder;
+
+}
+
+ul
+{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li
+{
+    height: 50px;
+}
+
+.menu a,pre
+{
+    height: 100%;
+    padding: 0 30px;
+    /* margin: 0 10%; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.menu a:hover
+{
+    color: rgb(4, 255, 0);
+    background-color: #00000098;
+    background-size: 10%;
+    border: 1px solid gold;
+    border-radius: 10px;
+}
+
+li:first-child
+{
+    margin-right: auto;
+}
+
+.dropdown
+{
+    display: none;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.dropdown a:hover
+{
+    font-weight: bold;
+}
+
+li:hover .dropdown
+{
+    background-color: rgb(255, 255, 255);
+    /* backdrop-filter: blur(10px); */
+
+    background-size:10%;
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.dropdown ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown ul li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 5px 0 0;
+    font-size: 13px;
+    line-height: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+
+.links,.help, .address
+{
+    display: inline-block;
+    padding: 0 3%;
+}
+
+.links,.help
+{
+    padding-bottom: 10px;
+}
+
+h2
+{
+    width: fit-content;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.links li, .help li
+{
+    margin-right: 25px;
+}
+
+.links a, .help a, .links ul, .help ul
+{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+table
+{
+    width: 100%;
+    padding: 0 0 0 3%;
+}
+
+.links a:hover,.help a:hover
+{
+    color: cadetblue;
+}
