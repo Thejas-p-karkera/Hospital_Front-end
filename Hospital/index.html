@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .dropdown ul
+        {
+            border: 2px solid rgb(178, 178, 178);
+            border-radius: 10px;
+        }
+        
+        .dropdown li
+        {
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .dropdown a
+        {
+            color: black;
+            font-size: 17px;
+            /* padding: 5px; */
+        }
+
+        .dropdown a:hover
+        {
+            color: white;
+            border-bottom: 2px solid rgb(178, 178, 178);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>LifeCare</h1>
+            </div>
+            <ul>
+                <li class="menu"><a href="">Patients</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="addPatients.html">Add Patients</a></li>
+                            <li><a href="viewPatients.html">View Patients</a></li>
+                            <!-- <li><a href="#">Update Patients</a></li> -->
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu"><a href="">Doctors</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="addDoctors.html">Add Doctors</a></li>
+                            <li><a href="#">View Doctors</a></li>
+                            <li><a href="#">Update Doctors</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu"><a href="">Appointments</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="addAppointments.html">Book Appointments</a></li>
+                            <li><a href="viewAppointments.html">View Appointments</a></li>
+                            <li><a href="#">Update Appointments</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu"><a href="">About us</a></li>
+                <li class="menu"><a href="contactUs.html">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <div class="mainText">
+                <h1>The Hospital That <br>
+                    Cares for You</h1>
+                <h3>Best Team's</h3>
+                <button>Show more</button>
+            </div>
+            <img src="doctorsPhoto.png" alt="">
+        </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <footer>
+        <div>
+<pre>   <ion-icon name="location-outline"></ion-icon>#951, 24th Main Road, J.P.Nagar, Bengaluru 560078                    Hospital Management System &copy; All Rights reserved                    <a class="social" href="https://twitter.com/" target="_blank"> <ion-icon name="logo-twitter"></ion-icon></a> <a class="social" href="https://www.instagram.com/"> <ion-icon name="logo-instagram"></ion-icon></a> <a class="social" href="https://www.facebook.com/"> <ion-icon name="logo-facebook"></ion-icon></a> <a class="social" href="https://www.youtube.com/"> <ion-icon name="logo-youtube"></ion-icon> </a>
+</pre>
+
+
+
+        </div>
+    </footer>
+</body>
+</html>
