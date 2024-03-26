@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>View Patients</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-        #patientContainer {
-            background-color: aqua;
+        #patientContainer
+         {
+            background-color: rgb(14, 97, 97);
             border-radius: 2%;
             padding: 5px;
             margin: 30px 20px 20px 30px;
+            color: white;
         }
 
         body {
-            background-color: aquamarine;
+            background-color: rgb(1, 147, 147);
         }
 
         /* row header */
@@ -23,10 +25,11 @@
             padding: 1px;
             margin: 0px 84px 0px 0px;
             font-size: 17px;
-            color: #8358e0;
+            color: black;
         }
 
-        table {
+        table 
+        {
             border: 2px solid transparent;
             margin: 20px 56px 20px 238px;
             text-align: justify;
@@ -36,23 +39,65 @@
             padding: 4px;
         }
 
-        .custom-row {
+        .custom-row
+         {
             margin: 10px 0px 0px 0px;
             font-size: 15px;
         }
-        h3{
+
+        h3
+        {
+            margin-top: 0%;
             text-align: center;
-    color: #6b22b4;
-    font-size: 31px;
+            color: #09ff00;
+            font-size: 31px;
+            }
+
+
+        button#clearButton
+        {
+            align-content: center;
+            padding: 10px;
+            border-radius: 27px;
+            width: 98px;
+            margin-left: 575px;
+            background-color: #ff0019;
+            border: 1px solid snow;
+            font-weight: bolder;
+        }
+
+    button#clearButton:hover
+    {
+        color: aliceblue;
+        border: 2px solid black;
+
+    }
+
+/* -------------Back button----------------- */
+a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 8px;
 }
-button#clearButton {
-    align-content: center;
-    padding: 10px;
-    border-radius: 27px;
-    width: 98px;
-    margin-left: 609px;
-    background-color: #e1afca;
-    border: 1px snow;
+
+a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.back
+{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.backBtn
+{
+    padding-top: 1%;
+    padding-left: 2%;
 }
         
     </style>
@@ -60,6 +105,11 @@ button#clearButton {
 
 <body>
     <div id="patientContainer">
+
+            <div class="backBtn">
+                <a href="index.html" class="back">&laquo; Back</a>
+            </div>
+
         <h3>Patient Details</h3>
     </div>
     <button id="clearButton" onclick="clearLocalStorage()">Clear</button>
@@ -68,3 +118,4 @@ button#clearButton {
 </body>
 
 </html>
+

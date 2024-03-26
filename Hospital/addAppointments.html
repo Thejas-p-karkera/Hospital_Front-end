@@ -7,12 +7,17 @@
 
     <style>
 
+        body
+        {
+            background-color: #34dbca;
+        }
+
         .BookAppointments
         {
             /* text-align: right; */
             /* border: 2px solid rgb(0, 0, 0); */
-            margin-left: 430px;
-            margin-right: 430px;
+            margin-left: 400px;
+            margin-right: 400px;
             background-color: rgb(222, 222, 222);
             padding: 3%;
             border-radius: 10px;
@@ -24,13 +29,45 @@
 
             color: rgb(186, 0, 0);
         }
+
+        /* -------------Back button----------------- */
+a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.back
+{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.backBtn
+{
+    padding-top: 1%;
+    padding-left: 2%;
+}
         
 
     </style>
 </head>
 
 <body>
-    <h2 style="text-align: center;">Book Appointments</h2>
+
+    <div class="backBtn">
+        <a href="index.html" class="back">&laquo; Back</a>
+    </div>
+    
+    <h1 style="text-align: center;">Book Appointments</h1>
     <br><br>
 
     <div class="BookAppointments">
@@ -39,21 +76,22 @@
         
         <table>
 
-        <tr> <td> <label>First name : </label> </td> 
+        <tr> <td> <label>Patients's First name : </label> </td> 
         <td> <input type="text" placeholder="First name" id="fname" required> </td> </tr>
         <tr> <td> </td> <td colspan="2"> <p id="p1"></p> </td> </tr>
 
-        <tr> <td> <label>Last name : </label> </td> 
+        <tr> <td> <label>Patients's Last name : </label> </td> 
         <td> <input type="text" placeholder="Last name" id="lname"> </td> </tr>
         <tr> <td> </td> <td colspan="2"> <p id="p2"></p> </td> </tr>
 
-        <tr> <td> <label>Age : </label> </td> 
+        <tr> <td> <label>Patients's Age : </label> </td> 
         <td> <input type="text" placeholder="Patient age" id="age" required> </td> </tr> 
         <tr> <td> </td><td colspan="2"> <p id="p3"></p> </td> </tr>
 
-        <tr> <td> <label for="Gender">Gender :</label> </td> 
-        <td align="center"> <input type="radio" value="Male" name="Gender" id="m">    <label for="m">Male</label>
-        <input type="radio" value="Female" name="Gender" id="f">  <label for="f">Female</label> </td> </tr>
+        <tr> <td> <label for="Gender">Patients's Gender :</label> </td>
+        <td align="center"> <input type="radio" value="Male" name="gender" id="m">    <label for="m">Male</label>
+        <input type="radio" value="Female" name="gender" id="f">  <label for="f">Female</label> </td> </tr>
+        <tr> <td> </td><td colspan="2"> <p id="pGender"></p> </td> </tr>
 
         <tr> <td> <label>Contact number : </label> </td> 
         <td> <input type="text" placeholder="10 digits required" id="cnum" required> </td> </tr>
@@ -64,16 +102,16 @@
         <tr> <td> </td><td colspan="2"> <p id="p5"></p> </td> </tr>
 
         <tr> <td> <label>Appointment Date : </label> </td> 
-            <td> <input type="date" placeholder=" dd-mm-yyyy" id="Date" required> </td> </tr>
-            <tr> <td> </td><td colspan="2"> <p id="p5"></p> </td> </tr>
+            <td> <input type="date" placeholder=" dd-mm-yyyy" id="date" required> </td> </tr>
+            <tr> <td> </td><td colspan="2"> <p id="p6"></p> </td> </tr>
 
-        <tr> <td> <label>Address Details : </label> </td> 
+            <tr> <td> <label>Disease : </label> </td> 
+                <td> <input type="disease" placeholder=" Enter your disease" id="disease" required> </td> </tr>
+                <tr> <td> </td><td colspan="2"> <p id="p7"></p> </td> </tr>
+
+        <tr> <td> <label>Address : </label> </td> 
                 <td> <input type="address" placeholder=" Enter your address" id="address" required> </td> </tr>
-                <tr> <td> </td><td colspan="2"> <p id="p5"></p> </td> </tr>
-
-         <tr> <td> <label>Disease : </label> </td> 
-                    <td> <input type="disease" placeholder=" Enter your disease" id="disease" required> </td> </tr>
-                    <tr> <td> </td><td colspan="2"> <p id="p5"></p> </td> </tr>
+                <tr> <td> </td><td colspan="2"> <p id="p8"></p> </td> </tr>
 
 
         <tr> <td colspan="2" align="center"> <button type="submit" >Submit</button> </td> </tr>
@@ -84,7 +122,8 @@
 
 </div>
 
-<script src="BookAppointments.js"></script>
+<script src="addAppointments.js"></script>
 
 </body>
 </html>
+

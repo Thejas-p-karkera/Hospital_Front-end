@@ -7,6 +7,13 @@
     <title>Contact Us</title>
 </head>
 <body>
+    <form name="form" onsubmit="return confirmation()" method="post">
+
+
+    <div class="backBtn">
+        <a href="index.html" class="back">&laquo; Back</a>
+    </div>
+    
     <div class="container">
         <h1>Connect with us</h1><br>
         <p>We would love to respond to your queries and help you to get solution. <br> Feel free to get in touch with us</p><br><br>
@@ -14,16 +21,17 @@
         <div class="contact-box">
             <div class="contact-left">
                 <h2>Send your Request</h2>
-                <form>
+
+                <form id="contactForm">
 
                     <div class="input-row">
                         <div class="input-group">
                             <label>Name</label>
-                            <input type="text" placeholder="Your Name">
+                            <input type="text" placeholder="Your Name" id="name">
                         </div>
                         <div class="input-group">
                             <label>Phone</label>
-                            <input type="text" placeholder="+91 XXXXX XXXXX">
+                            <input type="text" placeholder="+91 XXXXX XXXXX" id="phone">
                         </div>
 
                     </div>
@@ -37,7 +45,6 @@
                             <label>Subject</label>
                             <input type="text" placeholder="">
                         </div>
-
                     </div>
 
                     <label>Message</label>
@@ -47,9 +54,20 @@
                 </form>
 
             </div>
+            
+            <div class="O">
+
+                <h1>O</h1>
+
+            </div>
+            <div class="R">
+
+                <h1>R</h1>
+
+            </div>
+
             <div class="contact-right">
                 <h2>Reach us</h2>
-
 
                 <table>
                     <tr>
@@ -72,6 +90,22 @@
             </div>
         </div>
     </div>
+
+
+    <!-- <script>
+
+        function confirm(event)
+        {
+            event.preventDefault();
+            alert('Your message has been sent successfully!'); // Show an alert
+            window.location.href = 'index.html';
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', confirm);
+
+    </script> -->
+
+    <script src="contactUs.js"></script>
 
 </body>
 </html>

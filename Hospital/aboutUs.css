@@ -1,0 +1,110 @@
+.about .row{
+    display: flex;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    background-color: rgb(189, 189, 189);
+    border: 1rex solid white;
+    border-radius: 10px;
+}
+
+/* .image
+{
+    margin-top: 100px;
+} */
+
+.about .heading{
+        background-color: #34dbca;
+        color: black;
+        text-align: center;
+        /* padding: 1em; */
+    }
+
+.about .row .image{
+    flex:1 1 30rem;
+}
+
+.about .row .image img{
+    width: 95%;
+    /* background-color: aliceblue; */
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+    /* background-color: aliceblue; */
+}
+
+.about .row .content h3{
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    font-size: 2.5rem;
+    /* line-height: 1.8; */
+}
+
+.about .row .content p{
+    color: var(--light-color);
+    /* padding: 1rem 0; */
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-left: 70px;
+    margin-right: 17px;
+}
+
+.features ul,p
+{
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.features h2
+{
+    margin-left: 50px;
+}
+
+.features ul
+{
+    margin-left: 50px;
+}
+
+.features p
+{
+    margin-left: 80px;
+}
+
+.backBtn,body
+{
+    background-color: #34dbca;
+}
+
+h1
+{
+    margin-top: 0%;
+    font-size: 4rem;
+}
+
+/* -------------Back button----------------- */
+a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.back
+{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.backBtn
+{
+    padding-top: 1%;
+    padding-left: 2%;
+}

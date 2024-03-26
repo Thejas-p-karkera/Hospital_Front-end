@@ -4,8 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>view Appointments</title>
+
+    <style>
+        #appointmentContainer {
+            background-color: rgb(14, 97, 97);
+            border-radius: 2%;
+            padding: 5px;
+            margin: 30px 20px 20px 30px;
+            color: white;
+        }
+
+        body {
+            background-color: rgb(1, 147, 147);
+        }
+
+        /* row header */
+        p {
+            display: inline;
+            padding: 1px;
+            margin: 0px 84px 0px 0px;
+            font-size: 17px;
+            color: black;
+        }
+
+        table {
+            border: 2px solid transparent;
+            margin: 20px 56px 20px 56px;
+            text-align: justify;
+        }
+
+        td {
+            padding: 4px;
+        }
+
+        .custom-row
+         {
+            margin: 10px 0px 0px 0px;
+            font-size: 15px;
+        }
+
+        h3
+        {
+            margin-top: 0%;
+            text-align: center;
+            color: #09ff00;
+            font-size: 31px;
+            }
+
+    button#clearButton
+    {
+        align-content: center;
+        padding: 10px;
+        border-radius: 27px;
+        width: 98px;
+        margin-left: 575px;
+        background-color: #ff0019;
+        border: 1px solid snow;
+        font-weight: bolder;
+    }
+
+    button#clearButton:hover
+    {
+        color: aliceblue;
+        border: 2px solid black;
+
+    }
+
+/* -------------Back button----------------- */
+a
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.back
+{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.backBtn
+{
+    padding-top: 1%;
+    padding-left: 2%;
+}
+        
+    </style>
 </head>
+
 <body>
+    <div id="appointmentContainer">
+
+        <div class="backBtn">
+            <a href="index.html" class="back">&laquo; Back</a>
+        </div>
+
+        <h3>Appointment Details</h3>
+    </div>
+    <button id="clearButton" onclick="clearLocalStorage()">Clear</button>
+    <!-- <script src="viewpatients.js"></script> -->
+    <script src="viewAppointments.js"></script>
     
 </body>
 </html>
+

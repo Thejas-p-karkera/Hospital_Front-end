@@ -6,7 +6,14 @@ const patientGender = localStorage.getItem('p-gender');
 const patientEmail = localStorage.getItem('p-email');
 const patientContact = localStorage.getItem('p-contact');
 
-let newPatient = { name: patientName,lastname: patientLastName, age: patientAge,gender:patientGender, contact : patientContact,email : patientEmail  };
+let newPatient = {
+     name: patientName,
+     lastname: patientLastName, 
+     age: patientAge,
+     gender:patientGender, 
+     contact : patientContact,
+     email : patientEmail  
+    };
 
 //array of patient details
 let existingPatients = JSON.parse(localStorage.getItem('patients')) || [];
@@ -41,7 +48,7 @@ let genderHeader = headerRow.insertCell(2);
 let contactHeader = headerRow.insertCell(3);
 let emailHeader = headerRow.insertCell(4);
 
-nameHeader.innerHTML = "<p>Name</p>";
+nameHeader.innerHTML = "<p></strong>Name</strong></p>";
 ageHeader.innerHTML = "<p><strong>Age</strong></p>";
 genderHeader.innerHTML = "<p><strong>Gender</strong></p>";
 contactHeader.innerHTML = "<p><strong>Contact</strong></p>";
@@ -63,6 +70,12 @@ patients.forEach(function (patient,index) {
     genderCell.textContent = patient.gender;
     contactCell.textContent = patient.contact;
     emailCell.textContent = patient.email;
+
+    nameCell.style.color = 'white';
+    ageCell.style.color = 'white';   
+    genderCell.style.color = 'white';   
+    contactCell.style.color = 'white';   
+    emailCell.style.color = 'white';   
 
 //     patientDetails.innerHTML = `
 //     <p class="data"> ${patient.name}</p>
